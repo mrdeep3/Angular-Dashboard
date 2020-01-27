@@ -1,0 +1,14 @@
+#left{
+    padding: 5%;
+    width: 40%;
+    float: left;
+}
+#right{
+    padding: 5%;
+    float: right;
+    width: 40%;
+}
+#container-dept-eff{
+    padding: 5%;
+    width: 80%;
+}
