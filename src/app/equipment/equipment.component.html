@@ -1,2 +1,26 @@
-<p>equipment works!</p>
-<p>include pagination</p>
+<div style="text-align:center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Device ID</th>
+                <th scope="col">Device Name</th>
+                <th scope="col">Device Type</th>
+                <th scope="col">Performance</th>
+                <th scope="col">Efficiency</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of collection.data | paginate: config">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.type}}</td>
+                <td><div class="circle{{item.performance}}"></div></td>
+                <td><div class="circle{{item.efficiency}}"></div></td>   
+                <td>{{item.location}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>  
+</div>
+   
