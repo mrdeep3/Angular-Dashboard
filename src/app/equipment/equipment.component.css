@@ -1,0 +1,36 @@
+table {
+    margin-left: 15%;
+    border-collapse: collapse;
+    width: 60%;
+    border: 0ch;
+  }
+  
+  th, td {
+      border-bottom: 0ch;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {background-color: #f2f2f2;}
+
+  .circle0, .circle3, .circle8, .circle9 {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  .circle1, .circle4, .circle6 {
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  .circle2, .circle5, .circle7 {
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
